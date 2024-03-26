@@ -1,8 +1,59 @@
-.Nombres-de-participantes ul {
-    list-style-type: none;
+/* Estilos para el header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0; /* Color de fondo del header */
+}
+.Logo-principal {
+    flex-shrink: 0; /* Evita que el contenedor del logo se reduzca */
+    margin-right: 20px; /* Espacio entre el logo y la navegación */
+
+    
 }
 
-.Navegacion ul{
+.Logo-principal img {
+  
+    max-block-size: 200px; 
+    height: auto;
 
+}
+/* Estilos para la navegación */
+
+.Navegacion {
+    flex-grow: 1; /* Permite que la navegación ocupe el espacio restante */
+    text-align: center; /* Centra los elementos */
+    margin-top: 0; /* Ajuste para alinear la navegación lo más arriba posible */
+}
+
+.Navegacion ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Navegacion li {
+    display: inline;
+    margin-right: 20px; /* Espacio entre elementos de navegación */
+}
+
+/* Estilos para la barra de búsqueda y el carrito */
+.Busqueda-y-Carrito {
+    display: flex;
+    align-items: center;
+}
+
+.Busqueda-y-Carrito form {
+    margin-left: auto; /* Empuja la barra de búsqueda hacia el lado derecho */
+    margin-right: 20px; /* Espacio entre la barra de búsqueda y el carrito */
+}
+
+.Carrito img {
+    max-width: 30px; 
+    margin-left:auto
+}
+
+.Carrito div {
+    margin-left: auto;
 }
