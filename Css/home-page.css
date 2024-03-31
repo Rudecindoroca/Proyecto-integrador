@@ -3,21 +3,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #f0f0f0; /* Color de fondo del header */
+    padding: 30px 20px;
+    background-color:lightblue; /* Color de fondo del header */
 }
+
 .Logo-principal {
-    flex-shrink: 0; /* Evita que el contenedor del logo se reduzca */
-    margin-right: 20px; /* Espacio entre el logo y la navegación */
+    flex:1;
+    max-width: 500px;
+    max-height: 250px;
 
     
 }
 
 .Logo-principal img {
   
-    max-block-size: 200px; 
+    width: 75%;
     height: auto;
+   
 
+}
+
+.Header-right {
+    display: flex;
+    align-items: center;
 }
 /* Estilos para la navegación */
 
