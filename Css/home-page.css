@@ -1,16 +1,23 @@
 /* Estilos para el header */
+
+body{
+    background-color: #dce7fc;
+}
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 20px;
-    background-color:lightblue; /* Color de fondo del header */
+    background-color:blue; /* Color de fondo del header */
 }
 
 .Logo-principal {
     flex:1;
     max-width: 500px;
     max-height: 250px;
+    margin-left:20px;
+    margin-top: 20px;
+    
 
     
 }
@@ -26,6 +33,13 @@
 .Header-right {
     display: flex;
     align-items: center;
+}
+
+.Navegacion {
+    flex-grow:1;
+    text-align: center;
+    margin-top:10px;
+    
 }
 /* Estilos para la navegación */
 
@@ -59,9 +73,75 @@
 
 .Carrito img {
     max-width: 30px; 
-    margin-left:auto
+    margin-left:auto;
+    
 }
 
 .Carrito div {
     margin-left: auto;
+    
+}
+
+.bolso img{
+
+    max-width: 400px;
+    margin-left: auto;
+
+}
+
+.bolso{
+    border: 1px solid black;
+}
+
+.Pulsera img{
+
+    max-width: 300px;
+    margin-left: auto;
+}
+
+.Cadena img{
+
+    max-width: 300px;
+    margin-left: auto;
+}
+
+.Casio img{
+
+    max-width: 200px;
+    margin-left: auto;
+}
+
+
+
+.Nombres-de-participantes {
+    list-style: none;
+}
+
+.Productos {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    margin: 20px 0; 
+}
+
+.Productos > div {
+    flex-basis: calc(20% - 20px); 
+    margin: 10px; 
+    text-align: center; 
+}
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: #f0f0f0;
+    
+
 }
