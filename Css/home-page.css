@@ -1,14 +1,14 @@
 /* Estilos para el header */
 
 body{
-    background-color: #dce7fc;
+    background-color: #223A5E;
 }
 
 
-header{
-    position:relative
+header {
+    position: relative;
     align-items: center;
-    
+    background-color: #dce7fc;
 }
 
 .Logo-principal {
@@ -76,63 +76,12 @@ header{
     margin-top: -50px;
 }
 
-
-.bolso img{
-
-    max-width: 400px;
-    margin-left: auto;
-
-}
-
-.bolso{
-    border: 1px solid black;
-    background-color:#f0f0f0 ;
-}
-
-.Pulsera img{
-
-    max-width: 300px;
-    margin-left: auto;
-}
-
-.Pulsera{
-    border: 1px solid black;
-    background-color:#f0f0f0 ;
-}
-
-.Cadena img{
-
-    max-width: 300px;
-    margin-left: auto;
-}
-
-.Cadena{
-    border: 1px solid black;
-    background-color:#f0f0f0 ;
-}
-
-.Casio img{
-
-    max-width: 200px;
-    margin-left: auto;
-}
-
-.Casio{
-    border: 1px solid black;
-    background-color:#f0f0f0 ;
-}
-
-
-
-.Nombres-de-participantes {
-    list-style: none;
-}
-
 .Productos {
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-around;
     margin: 20px 0;
+    margin-top: 35px;
 
 
 }
@@ -150,14 +99,85 @@ header{
 
 
 
+.Recomendados{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    margin: 20px 0;
+    margin-top: 35px;
+   
+}
+
+.Recomendados > div{
+    flex-basis: calc(20% - 20px); 
+    margin: 0 10px;
+    text-align: center;
+}
+
+.Recomendados img {
+    width: 100%; 
+    height: 250px; 
+}
+
+/* aca cambie el class de todos los productos que aparecen asi puedo usar el mismo css para todos */
+
+.productov img{
+
+    max-width: 200px;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.productov{
+    border: 3px solid grey;
+    background-color: #dce7fc ;
+}
+
+
+h2{
+    color:grey;
+    margin-top: 40px;
+}
+
+
+.Prendas{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    margin: 20px 0;
+    margin-top: 35px;
+   
+}
+
+.Prendas > div{
+    flex-basis: calc(20% - 20px); 
+    margin: 0 10px;
+    text-align: center;
+}
+
+.Prendas img {
+    width: 100%; 
+    height: 250px; 
+}
+
+
+.Nombres-de-participantes {
+    list-style: none;
+}
+
+
+
+
 
 
 footer {
+    border: 3px solid grey;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 20px;
-    background-color: #f0f0f0;
+    background-color:#dce7fc;
     
 
 }
