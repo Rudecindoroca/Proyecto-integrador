@@ -9,6 +9,7 @@ header {
     position: relative;
     align-items: center;
     background-color: #dce7fc;
+    padding-bottom: 1px;
 }
 
 .Logo-principal {
@@ -54,6 +55,10 @@ header {
     padding: 0;
 }
 
+.Navegacion a {
+    color:#223A5E
+}
+
 .Navegacion li {
     display: inline;
     margin-right: 20px; /* Espacio entre elementos de navegación */
@@ -74,6 +79,20 @@ header {
     max-width: 30px; 
     margin-right: 20px;
     margin-top: -50px;
+}
+
+.registro{ 
+    display: flex;
+    justify-content:left;
+    flex-grow: 1; /* Permite que la navegación ocupe el espacio restante */
+    text-align: left; /* Centra los elementos */
+    margin-top: -30px; 
+    margin-bottom: 60px;
+    margin-left: 10px;
+}
+
+.registro a {
+    color:#223A5E
 }
 
 .Productos {
