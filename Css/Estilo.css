@@ -26,6 +26,12 @@ header {
     
 }
 
+a {
+    color: black; 
+    text-decoration: none;
+}
+
+
 .Logo-principal img {
   
     width: 75%;
