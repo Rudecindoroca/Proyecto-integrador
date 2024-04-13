@@ -156,6 +156,7 @@ a {
 .productov{
     border: 3px solid grey;
     background-color: #dce7fc ;
+    padding-top: 10px;
 }
 
 
@@ -205,4 +206,18 @@ footer {
     background-color:#dce7fc;
     
 
+}
+
+ul.nombres{
+    list-style: none;
+}
+
+ul.iconos{
+    list-style: none;
+
+}
+
+ul.iconos li{
+    display: inline;
+    margin-right: 20px;
 }
