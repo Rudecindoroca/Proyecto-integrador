@@ -293,3 +293,44 @@ ul.iconos li{
     display: inline;
     margin-right: 20px;
 }
+
+
+.Productos-carrito {
+    display: flex;
+    flex-wrap: nowrap; /* Esto evita que los elementos se envuelvan */
+    justify-content: space-around;
+    margin: 20px 0;
+    margin-top: 35px;
+    overflow-x: auto; /* Añadir scroll horizontal si los elementos no caben en pantalla */
+}
+
+.Productos-carrito .producto1 {
+    flex: 0 0 auto; /* Asegura que los elementos mantengan su tamaño */
+    width: 200px; /* Ancho fijo para cada elemento */
+    margin: 0 5px; /* Espacio entre elementos */
+}
+
+
+.Productos-carrito > div {
+    flex-basis: calc(20% - 20px); 
+    margin: 10px; 
+    text-align: center; 
+}
+
+.Productos-carrito img {
+    width: 100%; 
+}
+
+
+.producto1 img{
+
+    max-width: 200px;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.producto1{
+    border: 3px solid grey;
+    background-color: #dce7fc ;
+    padding-top: 10px;
+}
