@@ -1,9 +1,9 @@
-/* Estilos para el header */
 
-body{
+
+/* Estilos para el header */
+body {
     background-color: #223A5E;
 }
-
 
 header {
     position: relative;
@@ -17,13 +17,9 @@ header {
     top: 0;
     left: 54%;
     transform: translateX(-50%);
-    z-index:1;
-
+    z-index: 1;
     max-width: 500px;
     max-height: 250px;
-    
-
-    
 }
 
 a {
@@ -31,13 +27,9 @@ a {
     text-decoration: none;
 }
 
-
 .Logo-principal img {
-  
     width: 75%;
     height: auto;
-   
-
 }
 
 .Header-right {
@@ -45,15 +37,14 @@ a {
     align-items: center;
 }
 
+/* Estilos para la navegación */
 .Navegacion {
     display: flex;
     justify-content: center;
     flex-grow: 1; /* Permite que la navegación ocupe el espacio restante */
     text-align: center; /* Centra los elementos */
     margin-top: 150px; 
-    
 }
-/* Estilos para la navegación */
 
 .Navegacion ul {
     list-style-type: none;
@@ -62,7 +53,7 @@ a {
 }
 
 .Navegacion a {
-    color:#223A5E
+    color: #223A5E;
 }
 
 .Navegacion li {
@@ -71,15 +62,12 @@ a {
 }
 
 /* Estilos para la barra de búsqueda y el carrito */
-
-.Carrito{ 
+.Carrito { 
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-left: auto;
-    
 }
-
 
 .Carrito img {
     max-width: 30px; 
@@ -87,9 +75,9 @@ a {
     margin-top: -50px;
 }
 
-.registro{ 
+.registro { 
     display: flex;
-    justify-content:left;
+    justify-content: left;
     flex-grow: 1; /* Permite que la navegación ocupe el espacio restante */
     text-align: left; /* Centra los elementos */
     margin-top: -30px; 
@@ -98,18 +86,90 @@ a {
 }
 
 .registro a {
-    color:#223A5E
+    color: #223A5E;
 }
+
+/* Estilos para el menú de hamburguesa en dispositivos móviles */
+@media screen and (max-width: 420px) {
+    .Navegacion {
+        display: none; /* Oculta la navegación en dispositivos móviles */
+    }
+    .Navegacion.mobile-menu {
+        display: flex; /* Muestra el menú de hamburguesa */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        background-color: #dce7fc;
+        z-index: 2;
+    }
+    .Navegacion.mobile-menu ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .Navegacion.mobile-menu ul li {
+        margin-bottom: 20px;
+    }
+    .Navegacion.mobile-menu ul li a {
+        color: #223A5E;
+        text-decoration: none;
+    }
+}
+
+/* Estilos para el icono del menú de hamburguesa */
+.mobile-menu-icon {
+    display: none; /* Oculta el icono del menú de hamburguesa en pantallas más grandes */
+}
+
+.mobile-menu-icon i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilos para el icono del menú de hamburguesa en dispositivos móviles */
+@media screen and (max-width: 420px) {
+    header {
+        position: relative;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #223A5E;
+    }
+
+    .Carrito {
+        position: absolute;
+        top: 30px; /* Adjust the top position as needed */
+        right: calc(5px + 20px); /* Adjust the right position to place it next to the hamburger icon */
+    }
+}
+
+
+
+
+
 
 .Productos {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: nowrap; /* Esto evita que los elementos se envuelvan */
     justify-content: space-around;
     margin: 20px 0;
     margin-top: 35px;
-
-
+    overflow-x: auto; /* Añadir scroll horizontal si los elementos no caben en pantalla */
 }
+
+.Productos .productov {
+    flex: 0 0 auto; /* Asegura que los elementos mantengan su tamaño */
+    width: 200px; /* Ancho fijo para cada elemento */
+    margin: 0 5px; /* Espacio entre elementos */
+}
+
 
 .Productos > div {
     flex-basis: calc(20% - 20px); 
@@ -122,26 +182,32 @@ a {
     height: 250px; 
 }
 
-
-
-.Recomendados{
+.Recomendados {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-around;
+    flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
     margin: 20px 0;
     margin-top: 35px;
-   
+    overflow-x: auto; /* Agrega scroll horizontal si es necesario */
 }
 
-.Recomendados > div{
-    flex-basis: calc(20% - 20px); 
-    margin: 0 10px;
-    text-align: center;
+.Recomendados .productov {
+    flex: 0 0 auto; /* Asegura que los elementos mantengan su tamaño */
+    width: 200px; /* Ancho fijo para cada elemento */
+    margin: 0 5px; /* Espacio entre elementos */
+
 }
+
+.Recomendados > div {
+    flex-basis: calc(20% - 20px); 
+    margin: 10px; 
+    text-align: center; 
+}
+
 
 .Recomendados img {
-    width: 100%; 
-    height: 250px; 
+    max-width: 100%; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 /* aca cambie el class de todos los productos que aparecen asi puedo usar el mismo css para todos */
@@ -166,13 +232,19 @@ h2{
 }
 
 
-.Prendas{
+.Prendas {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-around;
+    flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
     margin: 20px 0;
     margin-top: 35px;
-   
+    overflow-x: auto; /* Agrega scroll horizontal si es necesario */
+}
+
+.Prendas .productov {
+    flex: 0 0 auto; /* Asegura que los elementos mantengan su tamaño */
+    width: 200px; /* Ancho fijo para cada elemento */
+    margin: 0 5px; /* Espacio entre elementos */
 }
 
 .Prendas > div{
