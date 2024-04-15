@@ -217,13 +217,41 @@ a {
     max-width: 200px;
     margin-left: auto;
     margin-top: 10px;
+    object-fit: scale-down; /* Para que la foto no este deforme */
+    
 }
 
 .productov{
     border: 3px solid grey;
     background-color: #dce7fc ;
-    padding-top: 10px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+   
+
+    
 }
+
+/* uso el mismo class de "agregar-al carrito" para el "ver mas tambien asi no tengo que volver a escribir todo */
+
+.agregar-carrito {
+    display: inline-block; /* Hace que el enlace se comporte como un bloque */
+    padding: 10px 20px; /* Espacio alrededor del texto */
+    border: 2px solid #223A5E; /* Borde alrededor del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #dce7fc; /* Color de fondo */
+    color: black; 
+    text-decoration: none; 
+    margin-top: 5px;
+
+}
+
+.agregar-carrito:hover {
+    background-color: #cfd9f6; 
+}
+
 
 
 h2{
@@ -327,10 +355,21 @@ ul.iconos li{
     max-width: 200px;
     margin-left: auto;
     margin-top: 10px;
+    object-fit: scale-down; /* Para que la foto no este deforme */
+    max-height: 250px;
+    
 }
 
-.producto1{
+.producto1 {
     border: 3px solid grey;
     background-color: #dce7fc ;
-    padding-top: 10px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+   
+
+    
 }
+
