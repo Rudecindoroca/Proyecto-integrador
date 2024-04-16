@@ -48,24 +48,48 @@
     
     
     </header>
+    
+    <main class = "registro-de-cuenta">
+        <h2>Registro de Usuario</h2>
 
-    <main>
-        <h2>Iniciar sesión </h2>
-    <form action="/registro" method="post">
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre"><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="password">Contraseña:</label><br>
-        <input type="password" id="password" name="password"><br><br>
-        <button type="submit">Registrarse</button>
-    </form>
 
-    <div class = "Portal">
-        <a href="./Log-in.html"> Soy nuevo, quiero registrarme</a>
-    </div>
+        <section class="registro2">
+            <div class="creacion-de-usuario">
+                <form action="/registro" method="post">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="password">Contraseña:</label><br>
+                    <input type="password" id="password" name="password"><br><br>
+                    <label for="confirm-password">Repetir contraseña:</label><br>
+                    <input type="password" id="confirm-password" name="confirm-password"><br><br>
+                </form>
+            </div>
+        
+            <div class="boton-registro">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms" style="color: grey;">Términos y condiciones</label>
+            </div>
+        
+            <div class="boton-registro">
+                <button type="submit" style="margin-top: 10px;">Registrarse</button>
+            </div>
+        
+            <div class="enlace-login">
+                <a href="./Log-in.html" style="color: grey;">¡Ya tengo una cuenta!</a>
+            </div>
+        </section>
+        
+        
+       
 
-   
+    </section>
+
+    
+
+
+    
+
+    
 
     </main>
     

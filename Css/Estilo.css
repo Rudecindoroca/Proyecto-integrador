@@ -375,3 +375,27 @@ ul.iconos li{
 
     
 }
+
+.registro2 {
+    margin-top:10px;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.creacion-de-usuario {
+    margin-bottom: 20px;
+}
+
+.boton-registro {
+    margin-bottom: 10px;
+}
+
+.enlace-login {
+    margin-bottom: 20px;
+}
+
+
