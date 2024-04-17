@@ -58,7 +58,7 @@ a {
 
 .Navegacion li {
     display: inline;
-    margin-right: 20px; /* Espacio entre elementos de navegación */
+    margin-right: 20px; 
 }
 
 /* Estilos para la barra de búsqueda y el carrito */
