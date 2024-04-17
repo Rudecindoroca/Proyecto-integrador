@@ -405,3 +405,39 @@ ul.iconos li{
 }
 
 
+/* separacion para css de detalle de producto*/
+
+.foto-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilo para la foto del producto */
+.photo-iphone {
+    flex: 0 0 50%; 
+}
+
+.photo-iphone img {
+    max-width: 100%;
+    max-height: 700px;
+    height: auto;
+    display: block;
+    margin-right: 20px;
+}
+
+/* Estilo para el texto del producto */
+.texto-producto {
+    flex: 0 0 40%; 
+}
+
+.texto-producto h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.texto-producto p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
