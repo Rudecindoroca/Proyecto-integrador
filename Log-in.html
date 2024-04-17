@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./Css/Estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
-    <title>home-page</title>
+    <title>Log-in</title>
     
 </head>
 <body>
@@ -48,24 +48,45 @@
     
     
     </header>
+    
+    <main class = "registro-de-cuenta">
+        <h2>Log in</h2>
 
-    <main>
-        <h2>Iniciar sesión </h2>
-    <form action="/registro" method="post">
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre"><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="password">Contraseña:</label><br>
-        <input type="password" id="password" name="password"><br><br>
-        <button type="submit">Registrarse</button>
-    </form>
 
-    <div class = "Portal">
-        <a href="./Log-in.html"> Soy nuevo, quiero registrarme</a>
-    </div>
+        <section class="registro2">
+            <div class="creacion-de-usuario">
+                <form action="/registro" method="post">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="password">Contraseña:</label><br>
+                    <input type="password" id="password" name="password"><br><br>
+                </form>
+            </div>
+        
+            <div class="boton-registro">
+                <button type="submit" style="margin-top: 10px;">Log in</button>
+            </div>
+        
+            <div class="enlace-login">
+                <a href="./register.html" style="color: grey;">No tengo cuenta</a>
+            </div>
 
-   
+            <div class="enlace-login">
+                <a href="./Log-in.html" style="color: grey;">Me olvide la contraseña</a>
+            </div>
+        </section>
+        
+        
+       
+
+    </section>
+
+    
+
+
+    
+
+    
 
     </main>
     
