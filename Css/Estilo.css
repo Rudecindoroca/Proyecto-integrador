@@ -259,10 +259,6 @@ h2{
     margin-top: 40px;
 }
 
-h3{
-    color:grey
-}
-
 .Prendas {
     display: flex;
     flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
@@ -398,4 +394,20 @@ ul.iconos li{
     margin-bottom: 20px;
 }
 
+.pago {
+    display: inline-block; /* Hace que el enlace se comporte como un bloque */
+    padding: 10px 20px; /* Espacio alrededor del texto */
+    border: 2px solid grey; /* Borde alrededor del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #dce7fc; /* Color de fondo */
+    color: black; 
+    text-decoration: none; 
+    margin-top: 5px;
 
+}
+
+.pago:hover {
+    background-color: #dce7fc; 
+}
+
+h3{color: grey;}
