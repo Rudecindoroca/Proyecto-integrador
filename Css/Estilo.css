@@ -410,33 +410,33 @@ ul.iconos li{
     text-decoration: none; 
     margin-top: 5px;
 
-    h3{color: grey;}
+}
 
-    /* separacion para css de detalle de producto*/
+
+/* codigo css para el detalle del producto */
+
 
 .foto-principal {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start; 
+    align-items: center; 
     padding: 20px;
 }
 
-/* Estilo para la foto del producto */
 .photo-iphone {
-    flex: 0 0 50%; 
+    flex: 0 0 40%; 
+    margin-right: 20px; 
 }
 
 .photo-iphone img {
     max-width: 100%;
-    max-height: 700px;
     height: auto;
     display: block;
-    margin-right: 20px;
 }
 
-/* Estilo para el texto del producto */
+
 .texto-producto {
-    flex: 0 0 40%; 
+    flex: 0 0 60%; 
 }
 
 .texto-producto h2 {
