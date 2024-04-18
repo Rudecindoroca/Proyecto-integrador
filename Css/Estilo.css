@@ -416,16 +416,17 @@ ul.iconos li{
 /* codigo css para el detalle del producto */
 
 
+/* Estilos base que se aplican independientemente del tamaño de la pantalla */
 .foto-principal {
     display: flex;
-    justify-content: flex-start; 
-    align-items: center; 
+    justify-content: flex-start;
+    align-items: center;
     padding: 20px;
 }
 
 .photo-iphone {
-    flex: 0 0 40%; 
-    margin-right: 20px; 
+    flex: 0 0 40%;
+    margin-right: 20px;
 }
 
 .photo-iphone img {
@@ -434,10 +435,9 @@ ul.iconos li{
     display: block;
 }
 
-
 .texto-producto {
     flex: 0 0 60%;
-    Color: white 
+    color: white;
 }
 
 .texto-producto h2 {
@@ -449,3 +449,31 @@ ul.iconos li{
     font-size: 18px;
     margin-bottom: 10px;
 }
+
+/* Estilos específicos para pantallas con un ancho máximo de 420px */
+
+@media screen and (max-width: 420px) {
+    .foto-principal {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .photo-iphone {
+        flex: 0 0 100%; 
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+
+    .texto-producto {
+        flex: 0 0 100%;
+    }
+
+    .texto-producto h2 {
+        font-size: 24px; 
+    }
+
+    .texto-producto p {
+        font-size: 16px; 
+    }
+}
+
