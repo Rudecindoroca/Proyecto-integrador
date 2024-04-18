@@ -436,11 +436,12 @@ ul.iconos li{
 
 
 .texto-producto {
-    flex: 0 0 60%; 
+    flex: 0 0 60%;
+    Color: white 
 }
 
 .texto-producto h2 {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
