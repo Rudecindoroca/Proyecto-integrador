@@ -478,6 +478,55 @@ h3
         right: calc(5px + 20px); /* Adjust the right position to place it next to the hamburger icon */
     }
 
+    /* responsive para la pagina home (index) */
+
+    .Productos {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .Productos .productov {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+
+
+    .Recomendado .productov {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+
+    .Recomendados {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Prendas {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .ropa .productov {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+
+    /* responsive para carrito*/
+
+    .Productos-carrito {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .ropa .producto1 {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
 
 
 
