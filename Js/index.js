@@ -12,22 +12,52 @@ fetch(url)
         let arrayDeProductos = data;
 
         // El elemento HTML donde quiero hacer la modificación 
-        let section = document.querySelector('.Recomendados');
-        let allProductos = [];
+        let recomendados = document.querySelector('.Recomendados');
+        let ProductosPopulares = document.querySelector('.Productos');
+        let PrendasPopulares = document.querySelector('.Prendas');
+
+        let allRecomendados = '';
+        let allProductosPopulares = '';
+        let allPrendasPopulares = '';
 
         for (let i = 0; i < arrayDeProductos.length; i++) {
-            // Dentro del for voy acumulando en la variable una estructura HTML por cada producto del array.
-            allProductos += `<div>
-                                <img src=${arrayDeProductos[i].image} alt='${arrayDeProductos[i].title}' />
-                                <p>Name: ${arrayDeProductos[i].title}</p>
-                                <p>Category: ${arrayDeProductos[i].category}</p>
-                                <p>Price: $${arrayDeProductos[i].price}</p>
-                                <a href="detalle.html?id=${arrayDeProductos[i].id}">Ver detalle</a>
-                            </div>`;
+
+            if (arrayDeProductos[i].category == `men's clothing`|| arrayDeProductos[i].category == `women's clothing`){
+                allPrendasPopulares += `<div class ="productov">
+                                        <img src=${arrayDeProductos[i].image} alt='${arrayDeProductos[i].title}' />
+                                        <p>Name: ${arrayDeProductos[i].title}</p>
+                                        <p>Category: ${arrayDeProductos[i].category}</p>
+                                        <p>Price: $${arrayDeProductos[i].price}</p>
+                                        <a href="detalle.html?id=${arrayDeProductos[i].id}">Ver detalle</a>
+                
+                            
+                                      </div>`;
+            }else if (arrayDeProductos[i].category == `jewelery`) {
+                 allProductosPopulares += `<div class ="productov">
+                                        <img src=${arrayDeProductos[i].image} alt='${arrayDeProductos[i].title}' />
+                                        <p>Name: ${arrayDeProductos[i].title}</p>
+                                        <p>Category: ${arrayDeProductos[i].category}</p>
+                                        <p>Price: $${arrayDeProductos[i].price}</p>
+                                        <a href="detalle.html?id=${arrayDeProductos[i].id}">Ver detalle</a>
+                                    </div>`;
+
+            }else if (arrayDeProductos[i].category == `electronics`) {
+                allRecomendados += `<div class ="productov" >
+                                        <img src=${arrayDeProductos[i].image} alt='${arrayDeProductos[i].title}' />
+                                        <p>Name: ${arrayDeProductos[i].title}</p>
+                                        <p>Category: ${arrayDeProductos[i].category}</p>
+                                        <p>Price: $${arrayDeProductos[i].price}</p>
+                                        <a href="detalle.html?id=${arrayDeProductos[i].id}">Ver detalle</a>
+                                    </div>`;
+            }
+
         }
 
+        
         // Corregir el nombre del elemento section a section
-        section.innerHTML = allProductos;
+        recomendados.innerHTML = allRecomendados;
+        ProductosPopulares.innerHTML = allProductosPopulares;
+        PrendasPopulares.innerHTML = allPrendasPopulares;
 
     })
     .catch(function(e) {
