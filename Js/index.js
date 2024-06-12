@@ -19,10 +19,18 @@ fetch(url)
         let allRecomendados = '';
         let allProductosPopulares = '';
         let allPrendasPopulares = '';
+        
+        let contadorDePrendas = 0;
+        let contadorDePopulares = 0;
+        let contadorDeRecomendados = 0;
+
+
+
+
 
         for (let i = 0; i < arrayDeProductos.length; i++) {
 
-            if (arrayDeProductos[i].category == `men's clothing`|| arrayDeProductos[i].category == `women's clothing`){
+            if ((arrayDeProductos[i].category == `men's clothing`|| arrayDeProductos[i].category == `women's clothing`) && (contadorDePrendas < 4)){
                 allPrendasPopulares += `<div class ="productov">
                                         <img src=${arrayDeProductos[i].image} alt='${arrayDeProductos[i].title}' />
                                         <p>Name: ${arrayDeProductos[i].title}</p>
@@ -32,7 +40,8 @@ fetch(url)
                 
                             
                                       </div>`;
-            }else if (arrayDeProductos[i].category == `jewelery`) {
+                contadorDePrendas++;
+            }else if ((arrayDeProductos[i].category == `jewelery`) && (contadorDePopulares < 4)) {
                  allProductosPopulares += `<div class ="productov">
                                         <img src=${arrayDeProductos[i].image} alt='${arrayDeProductos[i].title}' />
                                         <p>Name: ${arrayDeProductos[i].title}</p>
@@ -40,8 +49,11 @@ fetch(url)
                                         <p>Price: $${arrayDeProductos[i].price}</p>
                                         <a href="detalle.html?id=${arrayDeProductos[i].id}">Ver detalle</a>
                                     </div>`;
+                contadorDePopulares++; 
 
-            }else if (arrayDeProductos[i].category == `electronics`) {
+            
+
+            }else if ((arrayDeProductos[i].category == `electronics`) && ( contadorDeRecomendados < 4)) {
                 allRecomendados += `<div class ="productov" >
                                         <img src=${arrayDeProductos[i].image} alt='${arrayDeProductos[i].title}' />
                                         <p>Name: ${arrayDeProductos[i].title}</p>
@@ -49,6 +61,7 @@ fetch(url)
                                         <p>Price: $${arrayDeProductos[i].price}</p>
                                         <a href="detalle.html?id=${arrayDeProductos[i].id}">Ver detalle</a>
                                     </div>`;
+                contadorDeRecomendados++;
             }
 
         }
