@@ -24,6 +24,10 @@ fetch(url)
         let contadorDePopulares = 0;
         let contadorDeRecomendados = 0;
 
+
+
+
+
         for (let i = 0; i < arrayDeProductos.length; i++) {
 
             if ((arrayDeProductos[i].category == `men's clothing`|| arrayDeProductos[i].category == `women's clothing`) && (contadorDePrendas < 4)){
