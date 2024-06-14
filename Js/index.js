@@ -33,21 +33,23 @@ fetch(url)
             if ((arrayDeProductos[i].category == `men's clothing`|| arrayDeProductos[i].category == `women's clothing`) && (contadorDePrendas < 4)){
                 allPrendasPopulares += `<div class ="productov">
                                         <img src=${arrayDeProductos[i].image} alt='${arrayDeProductos[i].title}' />
-                                        <p>Name: ${arrayDeProductos[i].title}</p>
+                                        <p> ${arrayDeProductos[i].title}</p>
                                         <p>Category: ${arrayDeProductos[i].category}</p>
                                         <p>Price: $${arrayDeProductos[i].price}</p>
-                                        <a href="detalle.html?id=${arrayDeProductos[i].id}">Ver detalle</a>
-                
+                                        <a href="./cart.html" class="agregar-carrito">Agregar a tu carrito</a>
+                                        <a href="producto.html?id=${arrayDeProductos[i].id}" class= "agregar-carrito" >Ver detalle</a>
+        
                             
                                       </div>`;
                 contadorDePrendas++;
             }else if ((arrayDeProductos[i].category == `jewelery`) && (contadorDePopulares < 4)) {
                  allProductosPopulares += `<div class ="productov">
                                         <img src=${arrayDeProductos[i].image} alt='${arrayDeProductos[i].title}' />
-                                        <p>Name: ${arrayDeProductos[i].title}</p>
+                                        <p> ${arrayDeProductos[i].title}</p>
                                         <p>Category: ${arrayDeProductos[i].category}</p>
                                         <p>Price: $${arrayDeProductos[i].price}</p>
-                                        <a href="detalle.html?id=${arrayDeProductos[i].id}">Ver detalle</a>
+                                        <a href="./cart.html" class="agregar-carrito">Agregar a tu carrito</a>
+                                        <a href="producto.html?id=${arrayDeProductos[i].id}" class= "agregar-carrito" >Ver detalle</a>
                                     </div>`;
                 contadorDePopulares++; 
 
@@ -56,10 +58,11 @@ fetch(url)
             }else if ((arrayDeProductos[i].category == `electronics`) && ( contadorDeRecomendados < 4)) {
                 allRecomendados += `<div class ="productov" >
                                         <img src=${arrayDeProductos[i].image} alt='${arrayDeProductos[i].title}' />
-                                        <p>Name: ${arrayDeProductos[i].title}</p>
+                                        <p> ${arrayDeProductos[i].title}</p>
                                         <p>Category: ${arrayDeProductos[i].category}</p>
                                         <p>Price: $${arrayDeProductos[i].price}</p>
-                                        <a href="detalle.html?id=${arrayDeProductos[i].id}">Ver detalle</a>
+                                        <a href="./cart.html" class="agregar-carrito">Agregar a tu carrito</a>
+                                        <a href="producto.html?id=${arrayDeProductos[i].id}" class= "agregar-carrito" >Ver detalle</a>
                                     </div>`;
                 contadorDeRecomendados++;
             }
