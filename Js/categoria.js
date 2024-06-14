@@ -28,10 +28,12 @@ if (categoria) {
                                     <p>${allDecategoria[i].title}</p>
                                     <p>Category: ${allDecategoria[i].category}</p>
                                     <p>Price: $${allDecategoria[i].price}</p>
-                                    <a href="./cart.html" class="agregar-carrito">Agregar a tu carrito</a>
+                                    <!-- <p>${allDecategoria[i].description}</p> --> 
+                                        <!--Eso se agregaria al div de cada producto para demostrar la descripcion, pero queda muy larga y no se ve bien entonces no se mostramos como una decision de estilo -->
                                     <a href="producto.html?id=${allDecategoria[i].id}" class="agregar-carrito">Ver detalle</a>
                                   </div>`;
             }
+            
 
             section.innerHTML = productosCate;
         })
