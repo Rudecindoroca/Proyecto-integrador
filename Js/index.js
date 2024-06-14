@@ -19,10 +19,23 @@ fetch(url)
         let allRecomendados = '';
         let allProductosPopulares = '';
         let allPrendasPopulares = '';
+
+        let Navegar = document.querySelector('.Navegacion');
+
+        let navegacion = ''
+
         
         let contadorDePrendas = 0;
         let contadorDePopulares = 0;
         let contadorDeRecomendados = 0;
+
+
+
+
+
+
+
+
 
 
 
@@ -66,6 +79,11 @@ fetch(url)
                                     </div>`;
                 contadorDeRecomendados++;
             }
+
+
+
+
+
 
         }
 

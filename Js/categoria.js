@@ -1,43 +1,45 @@
-
 function getQueryParam(param) {
     let urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(param);
 }
 
 let categoria = getQueryParam('category');
-console.log(categoria);
 
-let recomendados = document.querySelector('.Recomendado');
-
-if (categoria){
+if (categoria) {
     let url = `https://fakestoreapi.com/products/category/${categoria}`;
-
-    fetch (url)
-        .then(function(res){
+    fetch(url)
+        .then(function(res) {
             return res.json();
         })
-        .then(function(data){
+        .then(function(data) {
+            // Acá ya tenemos los datos finales y es donde debemos escribir nuestro código.
             console.log(data);
+        
+            // Asignar directamente data al arrayDeProductos
+            let allDecategoria = data;
 
-            let arrayDeProductos = data;
+            let section = document.querySelector('.Recomendados');
 
-            let allRecomendados = '';
+            let productosCate = '';
 
-            for (let i = 0; i < arrayDeProductos.length; i++) {
-                allRecomendados += `<div class ="productov">
-                                        <img src=${arrayDeProductos[i].image} alt='${arrayDeProductos[i].title}' />
-                                        <p>Name: ${arrayDeProductos[i].title}</p>
-                                        <p>Category: ${arrayDeProductos[i].category}</p>
-                                        <p>Price: $${arrayDeProductos[i].price}</p>
-                                        <a href="detalle.html?id=${arrayDeProductos[i].id}">Ver detalle</a>
-                                    </div>`;
+            for (let i = 0; i < allDecategoria.length; i++) {
+                productosCate += `<div class="productov">
+                                    <img src=${allDecategoria[i].image} alt='${allDecategoria[i].title}' />
+                                    <p>${allDecategoria[i].title}</p>
+                                    <p>Category: ${allDecategoria[i].category}</p>
+                                    <p>Price: $${allDecategoria[i].price}</p>
+                                    <a href="./cart.html" class="agregar-carrito">Agregar a tu carrito</a>
+                                    <a href="producto.html?id=${allDecategoria[i].id}" class="agregar-carrito">Ver detalle</a>
+                                  </div>`;
             }
-            recomendados.innerHTML = allRecomendados;
+
+            section.innerHTML = productosCate;
         })
-        .catch(function(error){
-            console.log(error);
+        .catch(function(error) {
+            console.error('Error fetching data:', error);
         });
 }
+
 
     
 
