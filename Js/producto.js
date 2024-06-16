@@ -47,7 +47,7 @@ if (ProductoId) {
 // creo un array vacio para ir completando con los datos que vas agregando
 let carrito = [];
 //Recupero el storage
-let recuperoStorage = localStorage.getItem('cart');
+let recuperoStorage = localStorage.getItem('cartItems');
 //Veo si hay algo en el storage
 if(recuperoStorage != null){
     // Hago parse
@@ -65,7 +65,7 @@ agregar.addEventListener(`click`, function(e) {
     e.preventDefault()
     carrito.push(ProductoId)
     let carritoString = JSON.stringify(carrito)
-    localStorage.setItem('cart', carritoString)
+    localStorage.setItem('cartItems', carritoString)
   
 
     alert('Producto agregado al carrito')
