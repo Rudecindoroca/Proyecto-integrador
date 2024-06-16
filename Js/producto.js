@@ -44,3 +44,37 @@ if (ProductoId) {
     console.error('No hay un id en la URL');
 }
 
+// creo un array vacio para ir completando con los datos que vas agregando
+let carrito = [];
+//Recupero el storage
+let recuperoStorage = localStorage.getItem('cart');
+//Veo si hay algo en el storage
+if(recuperoStorage != null){
+    // Hago parse
+    let recuParse = JSON.parse(recuperoStorage)
+    carrito = recuParse
+
+}
+
+
+
+let agregar = document.querySelector(`.agregar-carrito`);
+
+agregar.addEventListener(`click`, function(e) {
+
+    e.preventDefault()
+    carrito.push(ProductoId)
+    let carritoString = JSON.stringify(carrito)
+    localStorage.setItem('cart', carritoString)
+  
+
+    alert('Producto agregado al carrito')
+    console.log("carrito:", carrito)
+    console.log("localstorage: ", localStorage)
+
+})
+
+
+
+
+
