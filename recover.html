@@ -53,28 +53,31 @@
     <main class = "registro-de-cuenta">
         <h2>Recuperar la contraseña: </h2>
 
-        
-
+    
 
         <section class="registro2">
             <div class="creacion-de-usuario">
 
                 <p>Ingrese su mail y le mandaremos un mail con informacion para recuperar su contraseña:</p>
-                <form action="/registro" method="post">
+                <form id='recoverForm' action="" method="post">
                     <label for="email">Email:</label><br>
                     <input type="email" id="email" name="email"><br>
+                    <div class="boton-registro">
+                        <input type="checkbox" id="terms" name="terms">
+                        <label for="terms" style="color: grey;">Quiero recuperar mi contraseña</label>
+                    </div>
+                    <div class="boton-registro">
+                        <button type="submit" style="margin-top: 10px;">Recuperar</button>
+                    </div>
+                    <h2 class="mensaje"></h2> 
+                    <p class="link-login"></p>
                 </form>
                 
             </div>
         
-            <div class="boton-registro">
-                <input type="checkbox" id="terms" name="terms">
-                <label for="terms" style="color: grey;">Quiero recuperar mi contraseña</label>
-            </div>
+          
         
-            <div class="boton-registro">
-                <button type="submit" style="margin-top: 10px;">Recuperar</button>
-            </div>
+            
         
            
         </section>
@@ -83,6 +86,9 @@
        
 
     </section>
+
+  
+    
 
     
 
@@ -95,6 +101,6 @@
     
        
     
-   
+   <script src="./Js/recover.js"></script>
 </body>
 </html>
