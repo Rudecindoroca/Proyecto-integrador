@@ -59,18 +59,19 @@
 
         <section class="registro2">
             <div class="creacion-de-usuario">
-                <form action="/registro" method="post">
+                <form id ="loginForm" action="./index.html" method="post">
                     <label for="email">Email:</label><br>
                     <input type="email" id="email" name="email"><br>
                     <label for="password">Contraseña:</label><br>
                     <input type="password" id="password" name="password"><br><br>
+                    <div class="boton-registro">
+                        <button type="submit" style="margin-top: 10px;">Log in</button>
+                    </div>
+                
                 </form>
             </div>
         
-            <div class="boton-registro">
-                <button type="submit" style="margin-top: 10px;">Log in</button>
-            </div>
-        
+            
             <div class="enlace-login">
                 <a href="./register.html" style="color: grey;">No tengo cuenta</a>
             </div>
@@ -96,6 +97,6 @@
     
        
     
-       
+    <script src="./Js/login.js"></script>  
 </body>
 </html>

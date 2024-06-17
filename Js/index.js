@@ -94,3 +94,5 @@ fetch(url)
     .catch(function(e) {
         console.log(e);
     });
+
+    console.log("localstorage: ", localStorage)
