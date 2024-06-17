@@ -46,6 +46,7 @@ if(recuperoStorage == null){
 
         finalizarCompraLink.addEventListener('click', function() {
             // Borrar todo el localStorage
+            alert("Gracias por compra, Tu compra fue exsitosa")
             localStorage.clear();
 
         })

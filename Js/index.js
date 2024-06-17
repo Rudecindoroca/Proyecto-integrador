@@ -36,10 +36,12 @@ fetch(url)
 
             if ((arrayDeProductos[i].category == `men's clothing`|| arrayDeProductos[i].category == `women's clothing`) && (contadorDePrendas < 4)){
                 allPrendasPopulares += `<div class ="productov">
+                                        <a href="producto.html?id=${arrayDeProductos[i].id}">
                                         <img src=${arrayDeProductos[i].image} alt='${arrayDeProductos[i].title}' />
                                         <p> ${arrayDeProductos[i].title}</p>
                                         <p>Category: ${arrayDeProductos[i].category}</p>
                                         <p>Price: $${arrayDeProductos[i].price}</p>
+                                        </a>
                                         <!-- <p> $${arrayDeProductos[i].description}</p> --> 
                                         <!--Eso se agregaria al div de cada producto para demostrar la descripcion, pero queda muy larga y no se ve bien entonces no se mostramos como una decision de estilo -->
                                         <a href="producto.html?id=${arrayDeProductos[i].id}" class= "agregar-carrito" >Ver detalle</a>
@@ -49,10 +51,12 @@ fetch(url)
                 contadorDePrendas++;
             }else if ((arrayDeProductos[i].category == `jewelery`) && (contadorDePopulares < 4)) {
                  allProductosPopulares += `<div class ="productov">
+                                        <a href="producto.html?id=${arrayDeProductos[i].id}">
                                         <img src=${arrayDeProductos[i].image} alt='${arrayDeProductos[i].title}' />
                                         <p> ${arrayDeProductos[i].title}</p>
                                         <p>Category: ${arrayDeProductos[i].category}</p>
                                         <p>Price: $${arrayDeProductos[i].price}</p>
+                                        </a>
                                         <!-- <p> $${arrayDeProductos[i].description}</p> --> 
                                         <!--Eso se agregaria al div de cada producto para demostrar la descripcion, pero queda muy larga y no se ve bien entonces no se mostramos como una decision de estilo -->
                                         
@@ -65,10 +69,12 @@ fetch(url)
 
             }else if ((arrayDeProductos[i].category == `electronics`) && ( contadorDeRecomendados < 4)) {
                 allRecomendados += `<div class ="productov" >
+                                        <a href="producto.html?id=${arrayDeProductos[i].id}">
                                         <img src=${arrayDeProductos[i].image} alt='${arrayDeProductos[i].title}' />
                                         <p> ${arrayDeProductos[i].title}</p>
                                         <p>Category: ${arrayDeProductos[i].category}</p>
                                         <p>Price: $${arrayDeProductos[i].price}</p>
+                                        </a>
                                         <!-- <p> $${arrayDeProductos[i].description}</p> --> 
                                         <!--Eso se agregaria al div de cada producto para demostrar la descripcion, pero queda muy larga y no se ve bien entonces no se mostramos como una decision de estilo -->
                                         
