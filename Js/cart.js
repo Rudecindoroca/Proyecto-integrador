@@ -42,6 +42,16 @@ if(recuperoStorage == null){
         .catch(function(e){
             console.log(e);
         })
+        var finalizarCompraLink = document.getElementById('finalizarCompra');
+
+        finalizarCompraLink.addEventListener('click', function() {
+            // Borrar todo el localStorage
+            localStorage.clear();
+
+        })
+
+
+
         
       
 
