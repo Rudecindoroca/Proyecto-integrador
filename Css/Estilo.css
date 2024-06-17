@@ -52,6 +52,14 @@ a {
     padding: 0;
 }
 
+.saludo{
+    color:#223A5E;
+}
+
+#logout-link{
+    margin-left: 10px;
+}
+
 .Navegacion a {
     color: #223A5E;
 }
@@ -204,6 +212,7 @@ a {
 .agregar-carrito:hover {
     background-color: #cfd9f6; 
 }
+
 
 
 

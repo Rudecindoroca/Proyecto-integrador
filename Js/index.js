@@ -90,9 +90,14 @@ fetch(url)
         ProductosPopulares.innerHTML = allProductosPopulares;
         PrendasPopulares.innerHTML = allPrendasPopulares;
 
+        
+
     })
     .catch(function(e) {
         console.log(e);
     });
 
     console.log("localstorage: ", localStorage)
+
+
+    

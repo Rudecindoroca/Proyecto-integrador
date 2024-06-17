@@ -27,7 +27,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
         event.preventDefault();
     } else {
         // Guardar el email del usuario en localStorage
-        localStorage.setItem("email", emailInput.value);
+        localStorage.setItem("userEmail", emailInput.value);
 
         console.log("localstorage: ", localStorage)
 
