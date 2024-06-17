@@ -212,6 +212,15 @@ h2{
     margin-top: 40px;
 }
 
+.empty{
+    color:grey;
+    margin-top: 20px;
+}
+
+#finalizarCompra{
+    margin-bottom: 20px;
+}
+
 .Prendas {
     display: flex;
     flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
