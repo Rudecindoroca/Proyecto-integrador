@@ -9,11 +9,11 @@ let elementosCarrito = "";
 
 //Veo si hay algo en el storage
 if(recuperoStorage == null){
-    // Hago parse
+
     
     let empty = document.querySelector(`.empty`);
     empty.innerText = mensaje;
-
+//si hay algo hago parse 
 } else {
     carrito =[];
     carrito = JSON.parse(recuperoStorage);
@@ -42,7 +42,7 @@ if(recuperoStorage == null){
         .catch(function(e){
             console.log(e);
         })
-        var finalizarCompraLink = document.getElementById('finalizarCompra');
+        let finalizarCompraLink = document.getElementById('finalizarCompra');
 
         finalizarCompraLink.addEventListener('click', function() {
             // Borrar todo el localStorage

@@ -16,15 +16,20 @@ fetch(url)
         let ProductosPopulares = document.querySelector('.Productos');
         let PrendasPopulares = document.querySelector('.Prendas');
 
+
+        // variables vacias para despues agregrles la informacion de cada seccion
+
         let allRecomendados = '';
         let allProductosPopulares = '';
         let allPrendasPopulares = '';
+
+
 
         let Navegar = document.querySelector('.Navegacion');
 
         let navegacion = ''
 
-        
+        //Contador de cuantos elementos hay asi es parejo en cada seccion 
         let contadorDePrendas = 0;
         let contadorDePopulares = 0;
         let contadorDeRecomendados = 0;
@@ -32,6 +37,8 @@ fetch(url)
 
 
 
+
+// se recorre el array deproductos uno por uno y se filtran en base a que categoria es cada progducto, despues se agregan a la variable vacia corespondiente y por ultimo al elemento html que seleccione al principio 
         for (let i = 0; i < arrayDeProductos.length; i++) {
 
             if ((arrayDeProductos[i].category == `men's clothing`|| arrayDeProductos[i].category == `women's clothing`) && (contadorDePrendas < 4)){
@@ -91,7 +98,7 @@ fetch(url)
         }
 
         
-        // Corregir el nombre del elemento section a section
+       
         recomendados.innerHTML = allRecomendados;
         ProductosPopulares.innerHTML = allProductosPopulares;
         PrendasPopulares.innerHTML = allPrendasPopulares;

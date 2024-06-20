@@ -23,13 +23,13 @@ document.getElementById("registerForm").addEventListener("submit", function(even
         alert("La contraseña debe tener al menos 6 caracteres");
         valid = false;
     }
-
+// validar que la contraseãs coincidan 
     if (passwordInput.value !== passwordConfirm.value) {
         alert("Las contraseñas no coinciden");
         valid = false;
 
     }
-
+//validar qu la caja de "aceptar los terminos y condiciones" este aceptada
     if (!termsCheckbox.checked) {
         alert("Por favor acepte los términos y condiciones");
         valid = false;
